@@ -1,0 +1,35 @@
+:root {
+  /* Font Family variables */
+
+  --font-h1: "Anek Tamil";
+  --font-clickable: "Geist Mono";
+
+  /* Font Sizes variable */
+
+  --fs-sm: clamp(0.75rem, 0vi + 0.75rem, 0.75rem);
+  --fs-base: clamp(0.94rem, 0.21vi + 0.83rem, 1rem);
+  --fs-md: clamp(1.17rem, 0.54vi + 0.9rem, 1.33rem);
+  --fs-lg: clamp(1.46rem, 1.04vi + 0.94rem, 1.78rem);
+  --fs-xl: clamp(1.83rem, 1.79vi + 0.94rem, 2.37rem);
+  --fs-xxl: clamp(2.29rem, 2.9vi + 0.84rem, 3.16rem);
+  --fs-xxxl: clamp(2.86rem, 4.49vi + 0.61rem, 4.21rem);
+
+  /* Color variables */
+
+  --primary: #808cfdcb;
+  --primary-light: #e9ecff;
+  --primary-opaque: #808cfd;
+}
+
+/* Font Faces */
+
+@font-face {
+  font-family: "Anek Tamil";
+  src: url(./assets/fonts/static/AnekTamil-ExtraBold.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist Mono";
+  src: url(./assets/fonts/GeistMono-Regular.ttf);
+}

@@ -1,0 +1,16 @@
+.button {
+  padding: 12px 17px;
+  border-radius: 7.25px;
+  background-color: var(--primary);
+}
+
+.button a {
+  font-size: var(--fs-base);
+  font-family: var(--font-clickable);
+  letter-spacing: -1px;
+}
+
+.button:hover {
+  background-color: var(--primary-opaque);
+  transition: all linear 0.1s;
+}

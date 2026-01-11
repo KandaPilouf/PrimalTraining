@@ -36,10 +36,14 @@ function Header() {
               <p>Cat Training</p>
             </li>
             <li className={styles.hide_on_mobile}>
-              <a href="/">Home</a>
+              <a className={styles.page} href="/">
+                Home
+              </a>
             </li>
             <li className={styles.hide_on_mobile}>
-              <a href="/">About</a>
+              <a className={styles.page} href="/">
+                About
+              </a>
             </li>
             <li className={styles.hide_on_mobile}>
               <Button />

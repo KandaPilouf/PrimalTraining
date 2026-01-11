@@ -43,6 +43,11 @@
   cursor: pointer;
 }
 
+.page:hover {
+  transition: ease-out 0.3s;
+  color: rgba(0, 0, 0, 0.432);
+}
+
 /* Sidebar styling */
 
 .sidebar {
@@ -108,5 +113,11 @@
 
   .sidebar li {
     height: 76px;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .sidebar {
+    right: -100%;
   }
 }

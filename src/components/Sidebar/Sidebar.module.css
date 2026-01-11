@@ -4,7 +4,7 @@
 
   position: fixed;
   top: 0;
-  right: 100%;
+  right: -100%;
   height: 100dvh;
   width: 250px;
   background-color: var(--primary-light);
@@ -13,6 +13,7 @@
   flex-direction: column;
   justify-content: flex-start;
   backdrop-filter: blur(100px);
+  transition: 300ms linear;
 }
 
 .active {
@@ -30,7 +31,7 @@
   align-content: center;
 }
 
-.sidebar li:hover:not(:last-child) {
+.sidebar li:hover:not(:last-child):not(:first-child) {
   background-color: white;
 }
 

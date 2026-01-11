@@ -1,0 +1,65 @@
+/* Main container grid */
+
+.grid_container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto 0.5fr 0.5fr;
+  padding-top: 85px;
+}
+
+.grid_container div {
+  background-color: grey;
+}
+
+/* Title grid(1) and styling */
+
+.title {
+  grid-column: span 12;
+
+  text-align: center;
+  font-family: var(--font-h1);
+  font-size: var(--fs-xxl);
+  text-transform: uppercase;
+  letter-spacing: -5%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.title_half {
+  color: var(--primary);
+}
+
+/* Second grid box */
+
+.grid_container div:nth-child(2) {
+  grid-column: span 8;
+  overflow: hidden;
+  border-bottom: 1px solid black;
+}
+
+.grid_container div:nth-child(2) img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* Third grid box */
+
+.grid_container div:nth-child(3) {
+  grid-column: span 4;
+  border-bottom: 1px solid black;
+}
+
+/* Fourth grid box */
+
+.grid_container div:nth-child(4) {
+  grid-column: span 4;
+}
+
+.grid_container div:nth-child(5) {
+  grid-column: span 4;
+}
+
+.grid_container div:nth-child(6) {
+  grid-column: span 4;
+}

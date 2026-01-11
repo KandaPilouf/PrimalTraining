@@ -16,3 +16,8 @@ ul {
 body {
   width: 100dvw;
 }
+
+h1 {
+  font-weight: normal;
+  line-height: normal;
+}

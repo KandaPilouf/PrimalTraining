@@ -1,5 +1,7 @@
 import styles from "./Hero.module.css";
-import cat from "../../assets/img/cat_bench.jpg";
+import cat from "../../assets/img/cat_kettlebell.jpg";
+import cat_close from "../../assets/img/cat_close.jpg";
+import About_btn from "../About_btn/About_btn.jsx";
 
 function Hero() {
   return (
@@ -13,16 +15,45 @@ function Hero() {
         <img src={cat} alt="cat bench" />
       </div>
       <div>
-        <h2>For the committed</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nisi
-          neque quos architecto dicta ipsam.
-        </p>
-        <p>About button placeholder</p>
+        <h2 className={styles.box_title}>
+          For the
+          <br />
+          committed
+        </h2>
+        <div className={styles.text_btn}>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+            id commodi blanditiis molestias vel impedit ab et unde illo
+            asperiores optio suscipit earum adipisci maiores!
+          </p>
+          <p>
+            <About_btn />
+          </p>
+        </div>
       </div>
-      <div>4</div>
-      <div>5</div>
-      <div>6</div>
+      <div>
+        <h2 className={styles.box_title}>guided by experts</h2>
+        <div className={styles.box_txt}>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis
+            sed quas ducimus ut, aperiam pariatur beatae suscipit voluptatum vel
+            quae officia. Atque harum maiores voluptas?
+          </p>
+        </div>
+      </div>
+      <div>
+        <h2 className={styles.box_title}>dynamic open gym</h2>
+        <div className={styles.box_txt}>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis
+            sed quas ducimus ut, aperiam pariatur beatae suscipit voluptatum vel
+            quae officia. Atque harum maiores voluptas?
+          </p>
+        </div>
+      </div>
+      <div>
+        <img src={cat_close} alt="cat close" />
+      </div>
     </div>
   );
 }

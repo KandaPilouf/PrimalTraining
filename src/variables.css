@@ -2,7 +2,9 @@
   /* Font Family variables */
 
   --font-h1: "Anek Tamil";
+  --font-h2: "Anek Tamil bold";
   --font-clickable: "Geist Mono";
+  --font-text: "Geist";
 
   /* Font Sizes variable */
 
@@ -30,6 +32,19 @@
 }
 
 @font-face {
+  font-family: "Anek Tamil bold";
+  src: url(./assets/fonts/static/AnekTamil-Bold.ttf);
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Geist Mono";
   src: url(./assets/fonts/GeistMono-Regular.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url(./assets/fonts/Geist-Regular.ttf);
+  font-display: swap;
 }

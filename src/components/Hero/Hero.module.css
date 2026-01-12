@@ -3,15 +3,15 @@
 .grid_container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto 0.5fr 0.5fr;
+  grid-template-rows: auto 0.7fr 0.7fr;
   padding-top: 85px;
 }
 
-.grid_container div {
-  background-color: grey;
+.grid_container div:not(:first-child) {
+  background-color: var(--primary-light);
 }
 
-/* Title grid(1) and styling */
+/* Title grid(box 1) and styling */
 
 .title {
   grid-column: span 12;
@@ -21,8 +21,21 @@
   font-size: var(--fs-xxl);
   text-transform: uppercase;
   letter-spacing: -5%;
-  border-top: 1px solid black;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+
   border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.title h1 {
+  height: 100%;
+  display: flex;
+  flex-flow: row;
+  line-height: 80%;
+  text-align: start;
+  padding-left: 20px;
 }
 
 .title_half {
@@ -47,19 +60,104 @@
 
 .grid_container div:nth-child(3) {
   grid-column: span 4;
-  border-bottom: 1px solid black;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
 }
 
-/* Fourth grid box */
+.text_btn {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+  justify-content: center;
+  gap: 20px;
 
-.grid_container div:nth-child(4) {
-  grid-column: span 4;
+  font-family: var(--font-text);
+  font-size: var(--fs-base);
+  padding: 15px 40px 15px 20px;
 }
 
+/* Fourth and fifth grid box */
+
+.grid_container div:nth-child(4),
 .grid_container div:nth-child(5) {
   grid-column: span 4;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  border-left: 1px solid black;
 }
+
+.box_txt {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+
+  font-family: var(--font-text);
+  font-size: var(--fs-base);
+  padding: 15px 40px 50px 20px;
+}
+
+/* Sixth box (img) */
 
 .grid_container div:nth-child(6) {
   grid-column: span 4;
+}
+
+.grid_container div:nth-child(6) img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* Box title and text box styling */
+
+.box_title {
+  font-family: var(--font-h2);
+  font-size: var(--fs-xxl);
+  letter-spacing: -3px;
+  text-transform: uppercase;
+  line-height: 91%;
+
+  padding: 20px;
+}
+
+/* Media queries */
+
+/* 800px max */
+
+@media screen and (max-width: 800px) {
+  .title {
+    text-align: start;
+  }
+
+  .title h1 {
+    font-size: var(--fs-xxl);
+    flex-flow: column;
+  }
+
+  .grid_container {
+    padding-top: 76px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.6fr 0.4fr 1fr 0.4fr 0.4fr;
+  }
+
+  .grid_container div:nth-child(2) {
+    grid-column: span 12;
+  }
+
+  .grid_container div:nth-child(3) {
+    grid-column: span 12;
+  }
+
+  .grid_container div:nth-child(6) {
+    grid-column: span 12;
+    grid-row: 4/5;
+  }
+
+  .grid_container div:nth-child(4) {
+    grid-column: span 12;
+  }
 }

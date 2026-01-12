@@ -89,6 +89,12 @@
 
 .sidebar li:last-child {
   padding: 0 10px;
+  align-items: center;
+}
+
+.sidebar li:last-child div {
+  display: flex;
+  justify-content: center;
 }
 
 .sidebar a {

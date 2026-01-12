@@ -1,7 +1,7 @@
 import styles from "./Hero.module.css";
 import cat from "../../assets/img/cat_kettlebell.jpg";
 import cat_close from "../../assets/img/cat_close.jpg";
-import About_btn from "../About_btn/About_btn.jsx";
+import Button from "../Button/Button.jsx";
 
 function Hero() {
   return (
@@ -12,7 +12,7 @@ function Hero() {
         </h1>
       </div>
       <div>
-        <img src={cat} alt="cat bench" />
+        <img loading="lazy" src={cat} alt="cat bench" />
       </div>
       <div>
         <h2 className={styles.box_title}>
@@ -26,9 +26,9 @@ function Hero() {
             id commodi blanditiis molestias vel impedit ab et unde illo
             asperiores optio suscipit earum adipisci maiores!
           </p>
-          <p>
-            <About_btn />
-          </p>
+          <div>
+            <Button label="About Us" />
+          </div>
         </div>
       </div>
       <div>
@@ -52,7 +52,7 @@ function Hero() {
         </div>
       </div>
       <div>
-        <img src={cat_close} alt="cat close" />
+        <img loading="lazy" src={cat_close} alt="cat close" />
       </div>
     </div>
   );

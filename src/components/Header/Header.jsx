@@ -46,7 +46,7 @@ function Header() {
               </a>
             </li>
             <li className={styles.hide_on_mobile}>
-              <Button />
+              <Button label="RESERVE YOUR SPOT" />
             </li>
             <li>
               <svg
@@ -104,7 +104,9 @@ function Header() {
             <a href="/">About</a>
           </li>
           <li>
-            <Button />
+            <div>
+              <Button className={styles.button} label="RESERVE YOUR SPOT" />
+            </div>
           </li>
         </ul>
       </div>

@@ -1,9 +1,9 @@
 import styles from "./Button.module.css";
 
-function Button() {
+function Button({ label }) {
   return (
     <div className={styles.button}>
-      <a href="/">RESERVE YOUR SPOT</a>
+      <a href="/">{label}</a>
     </div>
   );
 }

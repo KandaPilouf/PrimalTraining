@@ -4,6 +4,7 @@
   letter-spacing: -1px;
   display: block;
   height: 100%;
+  width: fit-content;
 
   padding: 12px 17px;
   border-radius: 7.25px;
@@ -14,4 +15,9 @@
   color: white;
   background-color: black;
   transition: all ease-out 0.3s;
+}
+
+.button {
+  display: flex;
+  width: fit-content;
 }

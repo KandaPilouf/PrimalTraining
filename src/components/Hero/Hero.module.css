@@ -47,7 +47,6 @@
 .grid_container div:nth-child(2) {
   grid-column: span 8;
   overflow: hidden;
-  border-bottom: 1px solid black;
 }
 
 .grid_container div:nth-child(2) img {
@@ -88,6 +87,7 @@
   flex-flow: column nowrap;
   justify-content: space-between;
   border-left: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .box_txt {

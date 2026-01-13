@@ -27,7 +27,7 @@ function Hero() {
             asperiores optio suscipit earum adipisci maiores!
           </p>
           <div>
-            <Button label="About Us" />
+            <Button label="Hello World" />
           </div>
         </div>
       </div>

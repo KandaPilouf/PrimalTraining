@@ -9,10 +9,10 @@ export default defineConfig({
   server: {
     https: {
       key: fs.readFileSync(
-        path.resolve(__dirname, "/home/sami/localhost-key.pem")
+        path.resolve(__dirname, "/Users/samikhan/Library/Application Support/mkcert/rootCA-key.pem")
       ),
       cert: fs.readFileSync(
-        path.resolve(__dirname, "/home/sami/localhost.pem")
+        path.resolve(__dirname, "/Users/samikhan/Library/Application Support/mkcert/rootCA.pem")
       ),
     },
     host: "0.0.0.0",
